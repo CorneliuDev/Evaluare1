@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!--
+Am utilizat html5 pentru ca:
+Este versiunea cea mai recentă și standardizată a HTML-ului.
+Oferă suport extins pentru elemente multimedia și structuri semantice.
+Este compatibil cu toate browserele moderne.-->
+<html lang="ro">
+
+<head>
+    <!-- Meta Informații (A4) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="O pagină dedicată celor 7 minuni ale lumii, prezentând detalii și imagini relevante.">
+    <meta name="keywords" content="Minuni ale lumii, HTML, Web Design, Istorie, Cultură">
+
+    <!-- Titlul Paginii (A4) -->
+    <title>Cele 7 Minuni ale Lumii</title>
+
+    <!-- Stiluri CSS Simple (Instrucțiuni Suplimentare) -->
+    <style>
+        /* Stiluri generale pentru corpul paginii */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Stiluri pentru header */
+        header {
+            background-color: #e05050;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Stiluri pentru navigare */
+        nav ul {
+            list-style-type: none;
+            /* Eliminare marcatori implicite */
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Stiluri pentru conținutul principal */
+        main {
+            padding: 20px;
+        }
+
+        /* Stiluri pentru secțiuni */
+        section {
+            margin-bottom: 40px;
+            
+        }
+
+        /* Stiluri pentru imagini */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Stiluri pentru iframe-uri */
+        iframe {
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Stiluri pentru tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Stiluri pentru formular */
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e14d4d;
+        }
+
+        /* Stiluri pentru footer */
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsivitate */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header-ul Paginii (A5, A21) -->
+    <header>
+        <h1>Cele 7 Minuni ale Lumii</h1>
+        <nav>
+            <ul>
+                <li><a href="#minunea1">Marea Piramidă din Giza</a></li>
+                <li><a href="#minunea2">Grădinile Suspendate din Babilon</a></li>
+                <li><a href="#minunea3">Statuia lui Zeus din Olympia</a></li>
+                <li><a href="#minunea4">Templul Artemis din Efes</a></li>
+                <li><a href="#minunea5">Mausoleul din Halicarnassus</a></li>
+                <li><a href="#minunea6">Colosul din Rodos</a></li>
+                <li><a href="#minunea7">Farul din Alexandria</a></li>
+            </ul>
+            <div style="height: 50px;"></div>
+        </nav>
+        <img src="Media/header.webp" alt="">
+    </header>
+
+    <!-- Conținut Principal (A5, A7, A13, A14, A15, A16, A17, A18, A19, A20) -->
+    <main>
+        <!-- Secțiunea Minunei 1: Marea Piramidă din Giza (A6, A7, A14, A15, A16) -->
+        <section id="minunea1">
+            <!-- Ancoră pentru navigare (A13) -->
+            <h1>Marea Piramidă din Giza</h1>
+            <!-- Inserarea imaginii (A14) -->
+            <img src="Media/piramida.jpg" alt="Marea Piramidă din Giza" width="600" usemap="#piramidaMap">
+            <!-- Harta de imagine pentru Piramidă (A16) -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.0742463292604!2d31.12992057634963!3d29.977296174957434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584f7de239bbcd%3A0xca7474355a6e368b!2sGiza%20Necropolis!5e0!3m2!1sen!2s!4v1727860024187!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Descriere (A6, A7) -->
+            <h3>Introducere</h3>
+            <p>Marea Piramidă din Giza este una dintre cele mai impresionante structuri antice, construită în jurul
+                anului 2560 î.Hr.</p>
+            <!-- Element media: Videoclip despre Piramidă (A15) -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/43V9RTpnxbk?si=zjTQe9weJD4Jq7ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <hr> <!-- Linie orizontală între secțiuni (A8) -->
+
+        <!-- Secțiunea Minunei 2: Grădinile Suspendate din Babilon (A6, A7, A14, A15) -->
+        <section id="minunea2">
+            <h1>Grădinile Suspendate din Babilon</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3363.331007506895!2d44.417890776430056!3d32.544010073762024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1558fdd71dd08931%3A0x6fe5866e28155e9a!2sRemains%20of%20the%20Hanging%20Gardens%20of%20Babylon!5e0!3m2!1sen!2s!4v1727860266246!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="Media/bbilon.jpg" alt="Grădinile Suspendate din Babilon" width="600">
+            <h3>Introducere</h3>
+            <p>Grădinile Suspendate din Babilon erau renumite pentru frumusețea și complexitatea lor, construite în
+                jurul anului 600 î.Hr.</p>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/19sNRhEqtrE" title="Minunile Lumii: Grădinile suspendate din Babilon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <hr>
+
+        <!-- Secțiunea Minunei 3: Statuia lui Zeus din Olympia (A6, A7, A14, A15) -->
+        <section id="minunea3">
+            <h1>Statuia lui Zeus din Olympia</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12268775.334736208!2d6.185854052944154!3d41.345691773759505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bd3066719a9f%3A0x8a590f483b405e0d!2sSanctuary%20of%20Zeus%20Polieus!5e0!3m2!1sen!2s!4v1727860359712!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="Media/zeus.jpg" alt="Statuia lui Zeus din Olympia" width="600">
+            <h3>Introducere</h3>
+            <p>Statuia lui Zeus din Olympia era o sculptură monumentală realizată în jurul anului 435 î.Hr.</p>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/zXb0tH4xBqM" title="Minunile Lumii: Statuia lui Zeus din Olympia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <hr>
+
+        <!-- Secțiunea Minunei 4: Templul Artemis din Efes (A6, A7, A14, A15) -->
+        <section id="minunea4">
+            <h1>Templul Artemis din Efes</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1573.0947703996114!2d27.362568738991012!3d37.949360092985465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b94d56fca57281%3A0xfaa6e359607f4524!2sThe%20Temple%20of%20Artemis!5e0!3m2!1sen!2s!4v1727860448567!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="Media/templu.jpg" alt="Templul Artemis din Efes" width="600">
+            <h3>Introducere</h3>
+            <p>Templul Artemis din Efes a fost un templu magnific construit în jurul anului 550 î.Hr.</p>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/Qr3nBLnj-8E" title="The Temple of Artemis in Ephesus - 7 Wonder of the Ancient World - See U in History" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <hr>
+
+        <!-- Secțiunea Minunei 5: Mausoleul din Halicarnassus (A6, A7, A14, A15) -->
+        <section id="minunea5">
+            <h1>Mausoleul din Halicarnassus</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3184.822121247415!2d27.421541476584892!3d37.037887372180315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14be6c4712970997%3A0x5ea4619a942df9d1!2sMausoleum%20at%20Halicarnassus!5e0!3m2!1sen!2s!4v1727860528454!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="Media/mausoleu.jpg" alt="Mausoleul din Halicarnassus" width="600">
+            <h3>Introducere</h3>
+            <p>Mausoleul din Halicarnassus a fost construit în jurul anului 350 î.Hr. ca mormânt pentru Mausolus.</p>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/qH1xN_p3YyM" title="Minunile Lumii: Mausol - Omul pentru care s-a facut primul Mausoleu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <hr>
+
+        <!-- Secțiunea Minunei 6: Colosul din Rodos (A6, A7, A14, A15) -->
+        <section id="minunea6">
+            <h1>Colosul din Rodos</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3209.2630788105525!2d28.22525947656375!3d36.451198072348625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1495619a72df1397%3A0xe0e598a70e6bd9c6!2sColossus%20of%20Rhodes!5e0!3m2!1sen!2s!4v1727860598987!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="Media/rodes.jpg" alt="Colosul din Rodos" width="600">
+            <h3>Introducere</h3>
+            <p>Colosul din Rodos a fost o statuie uriașă a zeului Helios, ridicată în jurul anului 280 î.Hr.</p>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/sTIFeUaYndY" title="Minunile Lumii: Colosul din Rodos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <hr>
+
+        <!-- Secțiunea Minunei 7: Farul din Alexandria (A6, A7, A14, A15) -->
+        <section id="minunea7">
+            <h1>Farul din Alexandria</h1>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176784.70887366845!2d29.79215382892634!3d31.169069938697053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49126710fd3%3A0xb4e0cda629ee6bb9!2sAlexandria%2C%20Alexandria%20Governorate%2C%20Egypt!5e0!3m2!1sen!2s!4v1727860680040!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="Media/far.png" alt="Farul din Alexandria" width="600">
+            <h3>Introducere</h3>
+            <p>Farul din Alexandria, cunoscut și sub numele de Farul din Pharos, a fost construit în jurul anului 280
+                î.Hr.</p>
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/jDPXFELZSS4" title="Minunile Lumii: Farul din Alexandria. Lumina din Pharos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <hr>
+
+        <!-- Listă Ordonată cu Cele 7 Minuni (A9, A10, A11) -->
+        <section id="lista_minuni">
+            <h1>Lista Ordonată cu Cele 7 Minuni ale Lumii</h1>
+            <!-- Listă ordonată care începe de la 1 (A11) -->
+            <ol start="1">
+                <li>Marea Piramidă din Giza</li>
+                <li>Grădinile Suspendate din Babilon</li>
+                <li>Statuia lui Zeus din Olympia</li>
+                <li>Templul Artemis din Efes</li>
+                <li>Mausoleul din Halicarnassus</li>
+                <li>Colosul din Rodos</li>
+                <li>Farul din Alexandria</li>
+            </ol>
+
+            <h3>Caracteristici Comune (A9, A10)</h3>
+            <!-- Listă neordonată cu tip de marcatori disc (A10) -->
+            <ul style="list-style-type: disc;">
+                <li>Arhitectură impresionantă</li>
+                <li>Importanță istorică</li>
+                <li>Patrimoniu mondial UNESCO</li>
+            </ul>
+        </section>
+        <hr>
+
+        <!-- Tabel cu Informații despre Minuni (A17) -->
+        <section id="tabel_minuni">
+            <h1>Informații despre Cele 7 Minuni ale Lumii</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Minunea</th>
+                        <th>Anul Construirii</th>
+                        <th>Locație</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Marea Piramidă din Giza</td>
+                        <td>2560 î.Hr.</td>
+                        <td>Egipt</td>
+                    </tr>
+                    <tr>
+                        <td>Grădinile Suspendate din Babilon</td>
+                        <td>600 î.Hr.</td>
+                        <td>Iraq</td>
+                    </tr>
+                    <tr>
+                        <td>Statuia lui Zeus din Olympia</td>
+                        <td>435 î.Hr.</td>
+                        <td>Grecia</td>
+                    </tr>
+                    <tr>
+                        <td>Templul Artemis din Efes</td>
+                        <td>550 î.Hr.</td>
+                        <td>Turcia</td>
+                    </tr>
+                    <tr>
+                        <td>Mausoleul din Halicarnassus</td>
+                        <td>350 î.Hr.</td>
+                        <td>Turcia</td>
+                    </tr>
+                    <tr>
+                        <td>Colosul din Rodos</td>
+                        <td>280 î.Hr.</td>
+                        <td>Grecia</td>
+                    </tr>
+                    <tr>
+                        <td>Farul din Alexandria</td>
+                        <td>280 î.Hr.</td>
+                        <td>Egipt</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+
+        <!-- Formuar de Comentarii (A19, A20) -->
+        <section id="formular">
+            <h1>Lasă un Comentariu</h1>
+            <!-- Formular de înregistrare a utilizatorilor (A19) -->
+            <form action="submit_comment.php" method="post">
+                <!-- Câmp de text pentru Nume (A20) -->
+                <label for="nume">Nume:</label><br>
+                <input type="text" id="nume" name="nume" required><br>
+
+                <!-- Câmp de text pentru Email (A20) -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+
+                <!-- Butoane radio pentru preferința unei minuni (A20) -->
+                <p>Ce minune preferi?</p>
+                <input type="radio" id="minunea1" name="minune" value="Marea Piramidă din Giza" required>
+                <label for="minunea1">Marea Piramidă din Giza</label><br>
+
+                <input type="radio" id="minunea2" name="minune" value="Grădinile Suspendate din Babilon">
+                <label for="minunea2">Grădinile Suspendate din Babilon</label><br>
+
+                <input type="radio" id="minunea3" name="minune" value="Statuia lui Zeus din Olympia">
+                <label for="minunea3">Statuia lui Zeus din Olympia</label><br>
+
+                <input type="radio" id="minunea4" name="minune" value="Templul Artemis din Efes">
+                <label for="minunea4">Templul Artemis din Efes</label><br>
+
+                <input type="radio" id="minunea5" name="minune" value="Mausoleul din Halicarnassus">
+                <label for="minunea5">Mausoleul din Halicarnassus</label><br>
+
+                <input type="radio" id="minunea6" name="minune" value="Colosul din Rodos">
+                <label for="minunea6">Colosul din Rodos</label><br>
+
+                <input type="radio" id="minunea7" name="minune" value="Farul din Alexandria">
+                <label for="minunea7">Farul din Alexandria</label><br><br>
+
+                <!-- Casete de selectare pentru interese (A20) -->
+                <p>Interese:</p>
+                <input type="checkbox" id="arhitectura" name="interese" value="Arhitectură">
+                <label for="arhitectura">Arhitectură</label><br>
+
+                <input type="checkbox" id="istorie" name="interese" value="Istorie">
+                <label for="istorie">Istorie</label><br>
+
+                <input type="checkbox" id="cultura" name="interese" value="Cultură">
+                <label for="cultura">Cultură</label><br>
+
+                <input type="checkbox" id="turism" name="interese" value="Turism">
+                <label for="turism">Turism</label><br><br>
+
+                <!-- Buton de trimitere (A20) -->
+                <button type="submit" onclick='alert("Mesaj trimis!")'>Trimite</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer-ul Paginii (A5, A21) -->
+    <footer>
+        <p>&copy; 2024 Cele 7 Minuni ale Lumii</p>
+        <!-- Referință externă către Wikipedia (A12) -->
+        <p>Mai multe informații pe <a href="https://ro.wikipedia.org/wiki/%C8%98apte_minuni_ale_lumii_antice"
+                target="_blank">Wikipedia</a>.</p>
+    </footer>
+
+    <!-- Comentariu Final (A5) -->
+    <!-- Pagina a fost creată pentru a prezenta detalii despre cele 7 minuni ale lumii, utilizând elemente HTML și CSS de bază. -->
+</body>
+
+</html>
